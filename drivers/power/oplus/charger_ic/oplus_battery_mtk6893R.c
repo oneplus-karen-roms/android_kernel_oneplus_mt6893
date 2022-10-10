@@ -6695,7 +6695,7 @@ EXPORT_SYMBOL(oplus_chg_set_camera_on);
 
 
 //====================================================================//
-void oplus_set_typec_sinkonly()
+void oplus_set_typec_sinkonly(void)
 {
 	if (pinfo != NULL && pinfo->tcpc != NULL) {
 		printk(KERN_ERR "[OPLUS_CHG][%s]: usbtemp occur otg switch[0]\n", __func__);
@@ -6703,7 +6703,7 @@ void oplus_set_typec_sinkonly()
 	}
 };
 
-void oplus_set_typec_cc_open()
+void oplus_set_typec_cc_open(void)
 {
 	if (pinfo != NULL && pinfo->tcpc != NULL) {
 		printk(KERN_ERR "[OPLUS_CHG][%s]: usbtemp set cc open\n", __func__);
